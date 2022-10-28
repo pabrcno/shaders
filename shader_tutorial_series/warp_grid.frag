@@ -13,5 +13,5 @@ void main(){
     color += cos(st.y * sin(u_time/30.0) * 60.0) + cos(st.x * sin(u_time/15.0) * 10.0);
     // color *= sin(u_time/2.0) * 0.5;
     
-    gl_FragColor = vec4(color,1.0);   
+    gl_FragColor = vec4(cos(color.x +u_time), sin(color.y + u_time), cos(color.x),1.0);   
 }

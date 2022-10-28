@@ -19,7 +19,7 @@ void main(){
 		coord.y = coord.y + sin(coord.x + cos(len)) + sin(u_time / 12.0);
 	}
 
-	gl_FragColor = vec4(cos(len * 2.0), cos(len ), cos(len * 1.0), 1.0);
+	gl_FragColor = vec4(sin((len +u_time)), cos((len +u_time) ), tan((len +u_time) * 1.0), 1.0);
 
 	// we can have a seperate color, obviously. so comment out the gl_FragColor above & uncomment the lines below
 	// vec3 color = vec3(cos(len * 3.0), cos(len * 4.0), cos(len * 2.0));
