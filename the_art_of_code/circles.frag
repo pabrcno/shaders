@@ -53,9 +53,9 @@ void main(){
     // to avoid this we can use smoothstep. It interpolates between 0 and 1
     // interpolation is a way to get a value between 2 values. smoothstep uses
     // a sigmoid function to do it. It is a function that goes from 0 to 1 and
-    // then back to 0. It is a common way to interpolate values.
+    // It is a common way to interpolate values.
     // smothstep takes 3 parameters, lower bound, upper bound and the value to interpolate.
-    // substracting a small value from the radius makes the edge of the circle
+    // substracting a small value from the lower and adding to the upper makes the edge of the circle
     // a little bit more blurry the bigger the value is the flatter the gradient of the S is.
     color = smoothstep(radius-.001, radius+.001, d);
 
